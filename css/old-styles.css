@@ -398,6 +398,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .portfolio.section .element:hover .card-overlay,
 .portfolio.section .element:focus .card-overlay {
     transform: translateY(0%);

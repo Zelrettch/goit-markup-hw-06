@@ -299,6 +299,54 @@
     background-color: #404BBF;
 }
 
+/* Poartfolio section */
+
+.portfolio.section .list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    justify-content: center;
+}
+
+.portfolio.section .element {
+    flex-basis: 100%;
+}
+
+.portfolio.section .element .text-block {
+  border-right: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
+  border-left: 1px solid #E7E9FC;
+}
+
+.portfolio.section .text-block {
+    padding: 32px 16px;
+}
+
+.portfolio.section .thumb {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio.section .card-overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    padding: 40px 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+
+.portfolio.section .element:hover .card-overlay,
+.portfolio.section .element:focus .card-overlay {
+    transform: translateY(0%);
+}
+
 /*Mobile only styles */
 @media screen and (max-width: 767px) {
     /* Hero section */
@@ -307,6 +355,23 @@
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
+    }
+    .hero.section {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/mobile/1x/hero-background.jpg");
+    }
+
+    @media (min-resolution: 192dpi) {
+        .hero.section {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url("../images/mobile/2x/hero-background@2x.jpg");
+        }        
     }
 
     /* Advantages section */
@@ -326,5 +391,13 @@
     /* Team section */
     .team.section .container {
         padding: 0 28px;
+    }
+
+    /* Portfolio section */
+    .portfolio.section .element {
+        box-shadow: 
+        0px 2px 1px 0px #2E2F4214,
+        0px 1px 1px 0px #2E2F4229,
+        0px 1px 6px 0px #2E2F4214;
     }
 }

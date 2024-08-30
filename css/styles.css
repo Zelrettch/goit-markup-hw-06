@@ -609,6 +609,10 @@
   fill: #f4f4fd;
 }
 
+.modal .checkbox-container .label-text {
+  display: block;
+}
+
 .modal .checkbox-container .link {
   display: inline-block;
   color: #4d5ae5;

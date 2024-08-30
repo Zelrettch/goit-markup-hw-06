@@ -323,6 +323,8 @@
 
 .portfolio.section .element {
   flex-basis: 100%;
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
 }
 
 .portfolio.section .element .text-block {
@@ -336,7 +338,6 @@
 }
 
 .portfolio.section .thumb {
-  height: 280px;
   position: relative;
   overflow: hidden;
 }
@@ -806,9 +807,9 @@
   }
 
   /* Portfolio section */
-  .portfolio.section .element {
-    box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
-      0px 1px 6px 0px #2e2f4214;
+
+  .portfolio.section .thumb {
+    height: 280px;
   }
 
   /* Footer section */
@@ -939,22 +940,10 @@
         url("../images/tablet/2x/hero-background@2x.jpg");
     }
   }
-
-  /* Advantages section */
-  .advantages.section .list {
-    column-gap: 24px;
-  }
-
-  .advantages.section .list .element {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-
-  .advantages.section .element-header {
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  /* Adwantages section */
+  /* Advantages section */
   .advantages.section .element-header {
     font-weight: 700;
     font-size: 36px;
@@ -963,6 +952,41 @@
 
   .advantages.section .paragraph {
     font-weight: 500;
+  }
+
+  .advantages.section .list {
+    column-gap: 24px;
+  }
+
+  .advantages.section .list .element {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .team.section .container {
+    padding: 0 108px;
+  }
+
+  .team.section .team.list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team.section .team.list > .element {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* Portfolio section */
+  .portfolio.section .thumb {
+    height: 300px;
+  }
+
+  .portfolio.section .list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .portfolio.section .list .element {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 

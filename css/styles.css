@@ -944,6 +944,17 @@
         url("../images/tablet/2x/hero-background@2x.jpg");
     }
   }
+
+  /* Footer styles */
+  .footer .container {
+    align-items: baseline;
+  }
+
+  .footer .tagline {
+    max-width: 264px;
+  }
+
+  .
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {

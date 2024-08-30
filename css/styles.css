@@ -54,6 +54,7 @@
 
 .button {
   display: block;
+  cursor: pointer;
 }
 
 .icon {
@@ -189,6 +190,34 @@
   position: absolute;
 }
 
+/* Header styles */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.header .link,
+.header .logo {
+  display: block;
+}
+
+.header .logo .accent {
+  color: #2e2f42;
+}
+
+.header .burger.button {
+  background-color: transparent;
+  border: none;
+}
+
+.header .burger.button {
+  fill: #2f2f37;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
 /* Hero section */
 
 .hero.section {
@@ -417,6 +446,16 @@
 
 /*Mobile only styles */
 @media screen and (max-width: 767px) {
+  /* Header styles */
+  .header .logo {
+    padding: 24px 0;
+  }
+
+  .header .navigation .list,
+  .header .contacts {
+    display: none;
+  }
+
   /* Hero section */
   .hero.section .hero-header {
     font-weight: 700;
